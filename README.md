@@ -1,5 +1,6 @@
 # Computational Intelligence for Optimization (CIFO) Project: Breaking CNNs 
 ### Case study:MNIST-Dataset
+<img src="https://github.com/VMunhangane/CIFO_PROJECT_Breaking-CNNs-MNIST-Dataset_Oreo_Group/blob/main/Oreo_Group_image/MNIST%20Dataset.png" align="left" width="400">
 
 ## Introduction
 
@@ -15,53 +16,44 @@ https://github.com/VMunhangane/CIFO_PROJECT_Breaking-CNNs-MNIST-Dataset_Oreo_Gro
 
 ## Some results and visualisations
 
-#### MNIST-Dataset image 
+The image below provides the performance of the trained model in each label. In general, the model is well trained since it is able to predict correctly all the labels (0-9). The accuracy of the precision, recall and f1 score are 0.95%. On the following results it is going to be analyzed the performance of this model on the adversarial images.
+<img src="https://github.com/VMunhangane/CIFO_PROJECT_Breaking-CNNs-MNIST-Dataset_Oreo_Group/blob/main/Oreo_Group_image/Performance%20of%20the%20trained%20model%20on%20test%20dataset%20.png" align="right" width="500">
 
-
-
-The figure 1 provides the performance of the trained model in each label. In general, the model is well trained since it is able to predict correctly all the labels (0-9). The accuracy of the precision, recall and f1 score are 0.95%. On the following results it is going to be analyzed the performance of this model on the adversarial images.
-
-
-# image of the model
-
-
-The well-trained model was used to classify the adversarial images resulted from each combination of the operators. The performance of the model on each of the 12 scenarios was analysed using the classification report and plotting the accuracy, precision, recall and f1-score on each generation.
+The above well-trained model was used to classify the adversarial images resulted from each combination of the operators. The performance of the model on each of the 12 scenarios was analysed using the classification report and plotting the accuracy, precision, recall and f1-score on each generation.
 
 
 ##### Fitness on each scenario
 After analysing the performance of the model on each scenario evolved by the GA’s operators, was compared, the distribution of the fitness throughout 10 generations. The figure below contains thirteen box plots for each scenario.
 Combining the results presented on each scenario with these box plots they clearly show that the scenarios with higher values of fitness are the ones with more adversarial images. These scenarios are able to misclassify the model. with this we can conclude that some operators succeed to maximize the fitness values throughout the 10 generations.
 
-#### Image 
+![image](https://github.com/VMunhangane/CIFO_PROJECT_Breaking-CNNs-MNIST-Dataset_Oreo_Group/blob/main/Oreo_Group_image/Distribution%20of%20the%20fitness%20on%20each%20of%2012%20scenarios%20through%2010%20generation.png)
 
 ### GA operator’s
-###### FPS_SPC_SM: Fitness proportion selection, single point crossover and swap mutation;
-###### FPS_SPC_IM: Fitness proportion selection, single point crossover and inversion mutation;
-###### FPS_AC_SM: Fitness proportion selection, arithmetic crossover, and swap mutation;
-###### FPS_AC_IM: Fitness proportion selection, arithmetic crossover, and inversion mutation;
-###### TS_SPC_SM: Tournament selection, single point crossover and swap mutation;
-###### TS_SPC_IM: Tournament selection, single point crossover and inversion mutation;
-###### TS_AC_SM: Tournament selection, arithmetic crossover, and swap mutation;
-###### TS_AC_IM: Tournament selection, arithmetic crossover, and inversion mutation;
-###### RS_SPC_SM: Raking selection, single point crossover and swap mutation;
-###### RS_SPC_IM: Raking selection, single point crossover and inversion mutation;
-###### RS_AC_SM: Raking selection, arithmetic crossover, and swap mutation;
-###### RS_AC_IM: Raking selection, arithmetic crossover, and inversion mutation;
-###### FPS_AC_SM_Elitism: Fitness proportion selection, arithmetic crossover, and swap mutation with elitism.
+* FPS_SPC_SM: Fitness proportion selection, single point crossover and swap mutation;
+* FPS_SPC_IM: Fitness proportion selection, single point crossover and inversion mutation;
+* FPS_AC_SM: Fitness proportion selection, arithmetic crossover, and swap mutation;
+* FPS_AC_IM: Fitness proportion selection, arithmetic crossover, and inversion mutation;
+* TS_SPC_SM: Tournament selection, single point crossover and swap mutation;
+* TS_SPC_IM: Tournament selection, single point crossover and inversion mutation;
+* TS_AC_SM: Tournament selection, arithmetic crossover, and swap mutation;
+* TS_AC_IM: Tournament selection, arithmetic crossover, and inversion mutation;
+* RS_SPC_SM: Raking selection, single point crossover and swap mutation;
+* RS_SPC_IM: Raking selection, single point crossover and inversion mutation;
+* RS_AC_SM: Raking selection, arithmetic crossover, and swap mutation;
+* RS_AC_IM: Raking selection, arithmetic crossover, and inversion mutation;
+* FPS_AC_SM_Elitism: Fitness proportion selection, arithmetic crossover, and swap mutation with elitism.
 
 ### Conclusions
 After all the analysis it is clear that GA’s operators are able to create adversarial images able to make a one well trained model misclassify. we can conclude that the implementation of the GA’s operators on MNIST dataset was achieved and the main outcomes of this implementation are:
-###### In general, for the constants chosen on this project the evolving using FPS got many images able to misclassify the model;
-###### Some combinations of operators like TS_SPC_SM, RS_AC_SM need more generations or increasing the probability of crossover and mutation to create images able to misclassify the model;
-###### The elitism did not have much impact on the fitness due to the number of the generations meaning that the evolving process only kept 10 best individuals among 1000.
-
-### image
+* In general, for the constants chosen on this project the evolving using FPS got many images able to misclassify the model;
+* Some combinations of operators like TS_SPC_SM, RS_AC_SM need more generations or increasing the probability of crossover and mutation to create images able to misclassify the model;
+* The elitism did not have much impact on the fitness due to the number of the generations meaning that the evolving process only kept 10 best individuals among 1000.
+![image](https://github.com/VMunhangane/CIFO_PROJECT_Breaking-CNNs-MNIST-Dataset_Oreo_Group/blob/main/Oreo_Group_image/MNIST%20images%20Vs%20adversarial%20images%20from%20GA%20operators.png)
 
 
 ## Group Name: Oreo
 ![Happyimage png](https://user-images.githubusercontent.com/71514679/120045432-e38e7400-c007-11eb-9e44-3c655f1a967f.jpg)
-
 ### Members:  
-###### Geraldo Timbe (M20200603); 
-###### Manuel Carreiras(M20200603); 
-###### Venâncio Munhangane (M20200579).
+* Geraldo Timbe (M20200603); 
+* Manuel Carreiras(M20200603); 
+* Venâncio Munhangane (M20200579).
